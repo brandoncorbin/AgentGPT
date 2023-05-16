@@ -296,6 +296,7 @@ const ChatMessage = ({ message }: { message: Message }) => {
           <ReactMarkdown
             remarkPlugins={[remarkGfm]}
             rehypePlugins={[rehypeHighlight]}
+            linkTarget={"_blank"}
           >
             {message.value}
           </ReactMarkdown>
